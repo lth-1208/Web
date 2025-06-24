@@ -1,0 +1,185 @@
+.section-footer {
+    min-height: 400px;
+    background: whitesmoke;
+    margin-top: 40px;
+
+}
+
+.news-letter {
+    background-color: $primary-color;
+    padding-top: 15px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+
+    .join {
+        h6 {
+            font-size: 22px;
+            font-weight: 400;
+            color: #000;
+            float: left;
+            margin-right: 5%;
+            margin-top: 10px;
+            letter-spacing: 1px;
+            font-family: 'Lato-Regular';
+            padding: 0;
+        }
+
+        input[type="text"] {
+            width: 30%;
+            color: #c3c3c3;
+            letter-spacing: 1px;
+            font-weight: 400;
+            font-size: 18px;
+            padding-top: 10px;
+            padding-right: 10px;
+            border: 3px solid #E4E4E4;
+            outline: none;
+            font-family: 'Lato-Regular';
+            text-align: left;
+        }
+
+        input[type="submit"] {
+            // outline: none;
+            cursor: pointer;
+            width: 22%;
+            padding-top: 10px;
+            padding-right: 0px;
+            padding-bottom: 6px;
+            background: #000;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 480;
+            margin-left: -3px;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-right: 0;
+            border: none;
+        }
+
+        input[type="submit"]:hover {
+            background-color: palevioletred;
+        }
+    }
+}
+
+.block-footer {
+    padding-left: 0px;
+
+    h3 {
+        padding-top: 20px;
+        padding-bottom: 5px;
+        color: black;
+    }
+
+    .footer-detail {
+        background-color: $xanh-pastel;
+        padding: 10px;
+        min-height: 270px;
+
+        h4 {
+            font-weight: bold;
+        }
+
+        hr {
+            margin-top: -5px;
+        }
+
+        img {
+            height: 90px;
+            width: 120px;
+            float: left;
+            margin-right: 15px;
+        }
+
+        .pull-right {
+            padding-top: 7px;
+        }
+
+        .post-meta {
+            padding-top: 10px;
+        }
+
+        a:hover {
+            color: $pink-color;
+            text-decoration: none;
+        }
+
+        .list-feature {
+            margin-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            li {
+                padding-top: 10px;
+                line-height: 2.5em;
+                border-bottom: 2px solid #eaeaea;
+
+                a {
+                    font-size: 16px;
+                }
+
+                i {
+                    margin-top: -9px;
+                    margin-right: 5px;
+                    font-size: 25px;
+                }
+            }
+        }
+
+        a.facebook {
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            margin-top: 0px;
+            margin-right: 1em;
+            vertical-align: text-bottom;
+        }
+
+        a.youtube {
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            margin-top: 0px;
+            margin-right: 1em;
+            vertical-align: text-bottom;
+        }
+
+        a.instagram {
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            margin-top: 0px;
+            margin-right: 1em;
+            vertical-align: text-bottom;
+        }
+
+        table {
+            td:first-child {
+                color: #000;
+                font-weight: 600;
+                padding-right: 4px;
+            }
+
+            td:nth-child(2) {
+                width: 10px;
+                color: $vang-pastel;
+                font-weight: bold;
+                padding-right: 2px;
+            }
+
+            td {
+                padding-bottom: 10px;
+            }
+
+            tr {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    margin-left: 50px;
+}

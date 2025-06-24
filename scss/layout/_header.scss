@@ -1,0 +1,103 @@
+/*Style menu header*/
+
+.header-main {
+    margin-bottom: 70px;
+}
+
+.navbar {
+    .navbar-brand {
+        img {
+            height: 30px;
+            justify-content: center;
+        }
+    }
+
+    min-height: 60px;
+    width: 100%;
+    margin: auto;
+    background: $primary-color;
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    margin-bottom: 40px;
+
+    a {
+        color: $base-font-color !important;
+        font-size: 17px;
+        letter-spacing: -0.5px;
+        padding-top: 20px !important;
+        text-decoration: none;
+    }
+
+    form {
+        margin-top: 12px;
+    }
+
+    input[type="search"] {
+        width: 240px;
+    }
+
+    input[type="submit"] {
+        margin-right: 7px;
+    }
+
+    .navbar-brand {
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+    }
+
+    li {
+        min-width: 85px;
+    }
+
+    .menu-login {
+        margin-right: 50px;
+    }
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    background: whitesmoke!important;
+    padding-bottom: 20px !important;
+}
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>.active>a {
+    background: #fff !important;
+    padding-bottom: 20px !important;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    background: #fff;
+    margin-right: -200px;
+}
+
+.megamenu {
+    width: 900px;
+    overflow: hidden;
+    padding: 15px !important;
+}
+
+.megamenuthumnail {
+    img {
+        height: 150px;
+    }
+
+    .title {
+        font-weight: bold;
+        border-bottom: 1px solid $pink-color;
+    }
+
+    .title:hover {
+        color: $pink-color !important;
+        text-decoration: none;
+    }
+
+    .menu-item {
+        color: #696969;
+        font-size: 14px;
+        margin: 0 !important;
+
+        a:hover {
+            color: $pink-color !important;
+        }
+    }
+}

@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    outline: none;
+}
+header{
+    height: 100px;
+    width: 100vw;
+    border-bottom: 2px solid #dddd ;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+.row {
+    display: flex;
+    width: 100%;
+}
+.admin-content-left {
+    width: 20%;
+    min-width: 200px;
+}
+.admin-content-right {
+    width: 80%;
+    padding: 30px 0 0 20px;
+}
+
+.admin-content-right-cartegory {
+  
+    background-color: #fef0f5; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-content-right-cartegory h2 {
+   color: black; 
+    margin-bottom: 20px;
+}
+
+.admin-content-right-cartegory input[type="text"] {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ffc0cb;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    
+}
+
+.admin-content-right-cartegory button {
+    background-color: #FFC0CB; /* hồng nổi bật */
+    color: black;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-content-right-cartegory button:hover {
+    background-color: #ec4f82;
+    color: white;
+}
+
+/* .admin-content-right-cartegory input{
+    height: 35px;
+    width: 200px;
+    padding-left: 12px;
+    margin-top: 15px;
+
+} */
+
+/* .admin-content-right-cartegory button{
+    display: block;
+    margin-top: 8px;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    background-color:#FFC0CB;
+    border: none;
+    transition: all 0.3 ease;
+}
+.admin-content-right-cartegory button:hover{
+    background-color: #ec4f82;
+    border: 1px solid #FFC0CB ;
+    color: white;
+} */
+
+/*------------------------Showpr--------------------*/
+
+.admin-content-right-cartegory-show table{
+  width: 90%;
+  text-align: center;
+  margin-top: 20px;
+  border: #FFC0CB;
+  border-collapse: collapse;
+}
+.admin-content-right-cartegory-show table tr th, td{
+    border: 1px solid #dddddd;
+}
+
+.admin-content-right-cartegory-show .btn-edit {
+  display: inline-block;
+  width: 80px;
+    padding: 8px 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #FFC0CB;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.admin-content-right-cartegory-show .btn-edit:hover {
+  background-color: #ec4f82;
+    color: white;
+}
+
+.admin-content-right-cartegory-show .btn-delete {
+  display: inline-block;
+    padding: 8px 16px;
+    width: 80px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  background-color: #dddddd;
+  color: black; 
+  border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.admin-content-right-cartegory-show .btn-delete:hover {
+  background-color: black;
+   color: white;
+}
+
+/*------------------------Product--------------------*/
+
+/* .admin-content-right-product-add input, select{
+    width: 200px;
+    height: 35px;
+    display: block;
+    margin: 20px 0;
+} */
+ .admin-content-right-product-add {
+    background-color: #fef0f5; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.admin-content-right-product-add h2 {
+    color: black; /* hồng đậm */
+    margin-bottom: 20px;
+}
+
+.admin-content-right-product-add input[type="text"],
+.admin-content-right-product-add select,
+.admin-content-right-product-add textarea {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ffc0cb;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.admin-content-right-product-add input[type="file"] {
+    margin-bottom: 15px;
+}
+
+.admin-content-right-product-add textarea {
+    resize: vertical;
+}
+
+.admin-content-right-product-add button {
+    background-color: #FFC0CB; 
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-content-right-product-add button:hover {
+    background-color: #ec4f82;
+    color: white;
+}
+
+
+.section-showcase .container {
+  padding-left: 0px;
+}
+.section-showcase .main-nav {
+  background: whitesmoke;
+  height: 100vh;
+}
+.section-showcase .main-nav h4 {
+  background: #FFC0CB;
+  padding: 11px;
+  color: black;
+  border: 2px solid #ec4f82;
+  text-transform: uppercase;
+}
+.section-showcase .main-nav ul {
+  padding: 0;
+}
+.section-showcase .main-nav a {
+  color: #000000;
+  letter-spacing: 0.1em;
+  text-transform: none;
+  font-weight: 500;
+  display: block;
+  padding: 8px 0 8px 20px;
+  border-bottom: 1px solid gray;
+}
+.section-showcase .main-nav a:hover {
+  background: rgba(255, 156, 173, 0.4);
+  text-decoration: none;
+}
+.section-showcase .main-nav .sub-arrow:after {
+  content: '\203A';
+  float: right;
+  margin-right: 20px;
+  transform: rotate(90deg);
+}
+.section-showcase .main-nav li:hover .sub-arrow:after {
+  content: '\2039';
+}
+.section-showcase .main-nav .main-nav-ul ul {
+  display: none;
+}
+.section-showcase .main-nav .main-nav-ul ul a:before {
+  content: '\203A';
+  margin-right: 10px;
+}
+.section-showcase .main-nav .main-nav-ul ul ul a:before {
+  content: '\203A';
+  margin-left: 20px;
+}
+.section-showcase .main-nav .main-nav-ul li:hover ul {
+  display: block;
+  background: whitesmoke;
+}
+
+
+
+
+

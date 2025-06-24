@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Beauty Shop</title>
+    <!--Viết TV-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="scss/all.css">
+
+
+</head>
+
+<body>
+    <header class="header-main">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <span>
+                            <img src="img/logos.png" alt="logo">
+                        </span> Beauty Shop
+                    </a>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="search" id="keyword" name="keyword" class="form-control" placeholder="Search">
+                        </div>
+                        <input type="submit" class="btn btn-default" value="Search">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-shopping-cart"><span class="badge">0</span></span>
+                        </a>
+                    </form>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Trang chủ
+                            </a></li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Sản phẩm <span
+                                    class="caret"></span></a>
+                            <ul class="megamenu dropdown-menu">
+                                <li>
+                                    <div class="row">
+                                        <div class="item col-sm-12 col-md-3 megamenuthumnail">
+                                            <img src="img/trangdiemmat.png" class="img-responsive"
+                                                alt="face thumbnail" />
+                                            <p>
+                                            <h4><a href="#" class="title">Trang điểm mặt</a></h4>
+                                            </p>
+                                            <p class="menu-item"><a href="#">Che khuyết điểm</a></p>
+                                            <p class="menu-item"><a href="#">Cushion</a></p>
+                                            <p class="menu-item"><a href="#">Kem nền</a></p>
+                                            <p class="menu-item"><a href="#">Phấn phủ</a></p>
+                                        </div>
+
+                                        <div class="item col-sm-12 col-md-3 megamenuthumnail">
+                                            <img src="img/trangdiemeyes.png" class="img-responsive"
+                                                alt="eyes thumbnail" />
+                                            <p>
+                                            <h4><a href="#" class="title">Trang điểm mắt</a></h4>
+                                            </p>
+                                            <p class="menu-item"><a href="#">Eyeliner</a></p>
+                                            <p class="menu-item"><a href="#">Mascara</a></p>
+                                            <p class="menu-item"><a href="#">Kẻ chân mày</a></p>
+                                            <p class="menu-item"><a href="#">Phấn mắt</a></p>
+                                        </div>
+
+                                        <div class="item col-sm-12 col-md-3 megamenuthumnail">
+                                            <img src="img/trangdiemmoi.png" class="img-responsive"
+                                                alt="lip thumbnail" />
+                                            <p>
+                                            <h4><a href="#" class="title">Trang điểm môi</a></h4>
+                                            </p>
+                                            <p class="menu-item"><a href="#">Son dưỡng</a></p>
+                                            <p class="menu-item"><a href="#">Son thỏi</a></p>
+                                            <p class="menu-item"><a href="#">Son kem-tint</a></p>
+                                            <p class="menu-item"><a href="#">Mặt nạ môi</a></p>
+                                        </div>
+
+                                        <div class="item col-sm-12 col-md-3 megamenuthumnail">
+                                            <img src="img/duongda1.png" class="img-responsive" alt="skin thumbnail" />
+                                            <p>
+                                            <h4><a href="#" class="title">Dưỡng da</a></h4>
+                                            </p>
+                                            <p class="menu-item"><a href="#">Kem chống nắng</a></p>
+                                            <p class="menu-item"><a href="#">Serum</a></p>
+                                            <p class="menu-item"><a href="#">Mặt nạ</a></p>
+                                            <p class="menu-item"><a href="#">Toner</a></p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                        <li class="menu-login"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Đăng
+                                nhập</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section-showcase">
+        <div class="container">
+            <div class="row">
+                <!-- danh mục sản phẩm -->
+                <div class="col-md-3 col-lg-3">
+                    <nav class="main-nav">
+                        <h4>Danh mục sản phẩm</h4>
+                        <ul class="main-nav-ul">
+                            <li class="has-sub">
+                                <a href="#">Trang điểm mặt <span class="sub-arrow"></span></a>
+                                <ul>
+                                    <li><a href="#">Che khuyết điểm</a></li>
+                                    <li><a href="#">Kem nền</a></li>
+                                    <li><a href="#">Cushion</a></li>
+                                    <li><a href="#">Phấn phủ</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-sub">
+                                <a href="#">Trang điểm mắt <span class="sub-arrow"></span></a>
+                                <ul>
+                                    <li><a href="#">Eyeliner</a></li>
+                                    <li><a href="#">Mascara</a></li>
+                                    <li><a href="#">Kẻ chân mày</a></li>
+                                    <li><a href="#">Phấn mắt</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-sub">
+                                <a href="#">Trang điểm môi <span class="sub-arrow"></span></a>
+                                <ul>
+                                    <li><a href="#">Son dưỡng</a></li>
+                                    <li><a href="#">Son thỏi</a></li>
+                                    <li><a href="#">Son kem-tint</a></li>
+                                    <li><a href="#">Mặt nạ môi</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-sub">
+                                <a href="#">Dưỡng da <span class="sub-arrow"></span></a>
+                                <ul>
+                                    <li><a href="#">Kem chống nắng</a></li>
+                                    <li><a href="#">Serum</a></li>
+                                    <li><a href="#">Mặt nạ</a></li>
+                                    <li><a href="#">Toner</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-sub">
+                                <a href="#">Làm sạch <span class="sub-arrow"></span></a>
+                                <ul>
+                                    <li><a href="#">Sữa rửa mặt</a></li>
+                                    <li><a href="#">Tẩy tế bào chết</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Mặt nạ</a></li>
+                            <li><a href="#">Phụ kiện trang điểm</a></li>
+                            <li><a href="#">Khuyến mại</a></li>
+                            <li><a href="#">Best seller</a></li>
+                            <li><a href="#">Most viewed</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- slide -->
+                <div class="col-sm-12 col-md-9 col-lg-9 block-main-slider">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="img/slide0.png" alt="Banner 0">
+                            </div>
+                            <div class="item">
+                                <img src="img/slide1.png" alt="Banner 1">
+
+                            </div>
+                            <div class="item">
+                                <img src="img/slide2.png" alt="Banner 2">
+
+                            </div>
+                            <div class="item">
+                                <img src="img/slide3.png" alt="Banner 3">
+                            </div>
+                            <div class="item">
+                                <img src="img/slide4.png" alt="Banner 4">
+                            </div>
+                            <div class="item">
+                                <img src="img/slide5.png" alt="Banner 5">
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button"
+                            data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button"
+                            data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- service -->
+    <section class="section-services">
+        <div clas="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 service-item">
+                    <div class="icon">
+                        <img src="img/shipment.png">
+                    </div>
+                    <div class="info">
+                        <a href="#">
+                            <h4>Miễn phí vận chuyển</h4>
+                        </a>
+                        <span>Cho đơn hàng <p>500.000<sup>VNĐ</sup></p></span>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 service-item">
+                    <div class="icon">
+                        <img src="img/doitra.png">
+                    </div>
+                    <div class="info">
+                        <a href="#">
+                            <h4>Đổi trả hàng trong 7 ngày</h4>
+                        </a>
+                        <span>Cho sản phẩm lỗi</span>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 service-item">
+                    <div class="icon">
+                        <img src="img/phone.png">
+                    </div>
+                    <div class="info">
+                        <a href="#">
+                            <h4>Liên hệ 24/7</h4>
+                        </a>
+                        <span>Tư vấn trực tuyến</span>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 service-item">
+                    <div class="icon">
+                        <img src="img/safe.png">
+                    </div>
+                    <div class="info">
+                        <a href="#">
+                            <h4>Mua sắm an toàn</h4>
+                        </a>
+                        <span>An tâm người tiêu dùng</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-menu-second">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <nav id="navigation" class="navbar navbar-default">
+                        <div id="myNavbar2">
+                            <ul class="nav nav-tabs">
+                                <li><a data-toggle="tab" href="#home">Tất cả sản phẩm</a></li>
+                                <li><a data-toggle="tab" href="#menu1">Sản phẩm mới</a></li>
+                                <li><a data-toggle="tab" href="#menu2">Khuyến mại Hot</a></li>
+                                <li><a data-toggle="tab" href="#menu1">Được quan tâm</a></li>
+                                <li><a data-toggle="tab" href="#menu1">Mỹ phẩm</a></li>
+                                <li><a data-toggle="tab" href="#menu1">Phụ kiện</a></li>
+                                <li><a data-toggle="tab" href="#menu3">Thương hiệu</a></li>
+                                <li><a data-toggle="tab" href="#menu1">Mã giảm giá</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-render-body">
+        <div class="tab-content">
+            <!-- sản phẩm mới -->
+            <div id="menu1" class="tab-pane fade in active">
+                <section class="section-new-product">
+                    <div class="container">
+                        <h3 class="text-center">Sản phẩm mới</h3> <br>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="thumbnail">
+                                <img src="img/pplemonade.png" title="PHẤN PHỦ LEMONADE">
+                                <div class="caption">
+                                    <div class="proName">PHẤN PHỦ LEMONADE</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">350.000</span> 280.000VNĐ
+                                        <span class="proPriceDiscount">(Sale 20%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="inew"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/pplaneige.jpg" title="PHẤN PHỦ LANEIGE">
+                                <div class="caption">
+                                    <div class="proName">PHẤN PHỦ LANEIGE</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice"></span> 425.500VNĐ
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="inew"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/banilatoner.png" title="TONER PAD BANILACO">
+                                <div class="caption">
+                                    <div class="proName">TONER PAD BANILACO</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">520.000</span> 410.000VNĐ
+                                        <span class="proPriceDiscount">(Sale 21%)</span>                                        
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="inew"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <a href="product.html"><img src="img/tncocoon.png" title="TONER COCOON" style=" width: 250px; height: 250px;"></a>
+                                <div class="caption">
+                                    <div class="proName"><a href="product.html">TONER COCOON</a></div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice"></span> 295.000VNĐ
+
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="inew"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/laneige.png" title="CUSHION LANEIGE">
+                                <div class="caption">
+                                    <div class="proName">CUSHION LANEIGE</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">645.000</span> 548.250VNĐ
+                                        <span class="proPriceDiscount">(Sale 15%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="inew"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/mcsmbl.png" title="MASCARA MAYBELLINE">
+                                <div class="caption">
+                                    <div class="proName">MASCARA MAYBELLINE</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice"></span> 215.000VNĐ
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="inew"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/pmclubclio.png" title="BẢNG PHẤM MẮT CLUB CLIO">
+                                <div class="caption">
+                                    <div class="proName">BẢNG PHẤM MẮT CLUB CLIO</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">730.000</span> 657.000VNĐ
+                                        <span class="proPriceDiscount">(Sale 10%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="inew"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/pmlemonade.png" title="BẢNG PHẤM MẮT LEMONADE">
+                                <div class="caption">
+                                    <div class="proName">BẢNG PHẤM MẮT LEMONADE</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">419.000</span> 335.200VNĐ
+                                        <span class="proPriceDiscount">(Sale 20%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="inew"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/srmlps.png" title="SỮA RỬA MẶT LA ROCHE-POSAY">
+                                <div class="caption">
+                                    <div class="proName">SỮA RỬA MẶT LA ROCHE-POSAY</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">630.000</span> 549.000VNĐ
+                                        <span class="proPriceDiscount">(Sale 13%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="inew"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/tbcdrjart.png" title="TẨY TBC DR.JART+">
+                                <div class="caption">
+                                    <div class="proName">TẨY TBC DR.JART+</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">890.000</span> 755.250VNĐ
+                                        <span class="proPriceDiscount">(Sale 15%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="inew"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/elnclub.png" title="EYELINE CLUB CLIO">
+                                <div class="caption">
+                                    <div class="proName">EYELINE CLUB CLIO</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">420.000</span> 299.999VNĐ
+                                        <span class="proPriceDiscount">(Sale 28%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="inew"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/elntfs.png" title="EYELINE THE FACE SHOP">
+                                <div class="caption">
+                                    <div class="proName">EYELINE THE FACE SHOP</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice"></span> 549.000VNĐ
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="inew"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                </section>
+            </div>
+
+
+            <!-- tất cả sản phẩm -->
+            <div id="home" class="tab-pane fade">
+                <section class="section-all-product">
+                    <div class="container">
+                        <h3 class="text-center">Tất cả sản phẩm</h3> <br>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/elnclub.png" title="EYELINE CLUB CLIO">
+                                <div class="caption">
+                                    <div class="proName">EYELINE CLUB CLIO</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">420.000</span> 299.999VNĐ
+                                        <span class="proPriceDiscount">(Sale 28%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/elntfs.png" title="EYELINE THE FACE SHOP">
+                                <div class="caption">
+                                    <div class="proName">EYELINE THE FACE SHOP</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice"></span> 549.000VNĐ
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/pplemonade.png" title="PHẤN PHỦ LEMONADE">
+                                <div class="caption">
+                                    <div class="proName">PHẤN PHỦ LEMONADE</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">350.000</span> 280.000VNĐ
+                                        <span class="proPriceDiscount">(Sale 20%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/pplaneige.jpg" title="PHẤN PHỦ LANEIGE">
+                                <div class="caption">
+                                    <div class="proName">PHẤN PHỦ LANEIGE</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice"></span> 425.500VNĐ
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/tbcdrjart.png" title="TẨY TBC DR.JART+">
+                                <div class="caption">
+                                    <div class="proName">TẨY TBC DR.JART+</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">890.000</span> 755.250VNĐ
+                                        <span class="proPriceDiscount">(Sale 15%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/banilatoner.png" title="TONER PAD BANILACO">
+                                <div class="caption">
+                                    <div class="proName">TONER PAD BANILACO</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">520.000</span> 410.000VNĐ
+                                        <span class="proPriceDiscount">(Sale 21%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/tncocoon.png" title="TONER COCOON">
+                                <div class="caption">
+                                    <div class="proName">TONER COCOON</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice"></span> 295.000VNĐ
+
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/laneige.png" title="CUSHION LANEIGE">
+                                <div class="caption">
+                                    <div class="proName">CUSHION LANEIGE</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">645.000</span> 548.250VNĐ
+                                        <span class="proPriceDiscount">(Sale 15%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/csespoir.jpg" title="CUSHION ESPOIR">
+                                <div class="caption">
+                                    <div class="proName">CUSHION ESPOIR</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">536.000</span> 475.250VNĐ
+                                        <span class="proPriceDiscount">(Sale 11%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/csclub.png" title="CUSHION CLUB CLIO">
+                                <div class="caption">
+                                    <div class="proName">CUSHION CLUB CLIO</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice"></span> 679.800VNĐ
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/csofl.png" title="CUSHION OFÉLIA">
+                                <div class="caption">
+                                    <div class="proName">CUSHION OFÉLIA</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">462.000</span> 366.250VNĐ
+                                        <span class="proPriceDiscount">(Sale 24%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/pmclubclio.png" title="BẢNG PHẤM MẮT CLUB CLIO">
+                                <div class="caption">
+                                    <div class="proName">BẢNG PHẤM MẮT CLUB CLIO</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">730.000</span> 657.000VNĐ
+                                        <span class="proPriceDiscount">(Sale 10%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/pmlemonade.png" title="BẢNG PHẤM MẮT LEMONADE">
+                                <div class="caption">
+                                    <div class="proName">BẢNG PHẤM MẮT LEMONADE</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">419.000</span> 335.200VNĐ
+                                        <span class="proPriceDiscount">(Sale 20%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/pmpd.png" title="BẢNG PHẤM MẮT PERFECT DIARY">
+                                <div class="caption">
+                                    <div class="proName">BẢNG PHẤM MẮT PERFECT DIARY</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">483.000</span> 299.000VNĐ
+                                        <span class="proPriceDiscount">(Sale 38%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/srmlps.png" title="SỮA RỬA MẶT LA ROCHE-POSAY">
+                                <div class="caption">
+                                    <div class="proName">SỮA RỬA MẶT LA ROCHE-POSAY</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">630.000</span> 549.000VNĐ
+                                        <span class="proPriceDiscount">(Sale 13%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/srmtfs.png" title="SỮA RỬA MẶT THE FACE SHOP">
+                                <div class="caption">
+                                    <div class="proName">SỮA RỬA MẶT THE FACE SHOP</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice"></span> 299.000VNĐ
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/banilacoclean.png" title="BỘ KIT TẨY TRANG & DƯỠNG DA BANILA CO">
+                                <div class="caption">
+                                    <div class="proName">BỘ KIT TẨY TRANG & DƯỠNG DA BANILA CO</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice"></span> 599.000VNĐ
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/ttcocoon.png" title="NƯỚC TẨY TRANG BÍ ĐAO COCOON">
+                                <div class="caption">
+                                    <div class="proName">NƯỚC TẨY TRANG BÍ ĐAO COCOON</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice"></span> 295.000VNĐ
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/ttlps.png" title="NƯỚC TẨY TRANG LA ROCHE-POSAY">
+                                <div class="caption">
+                                    <div class="proName">NƯỚC TẨY TRANG LA ROCHE-POSAY</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">561.000</span> 549.760VNĐ
+                                        <span class="proPriceDiscount">(Sale 2%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/ckdmbl.jpg" title="CKĐ MAYBELLINE">
+                                <div class="caption">
+                                    <div class="proName">CKĐ MAYBELLINE</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice"></span> 238.000VNĐ
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/dmtfs.png" title="DƯỠNG MÔI THE FACE SHOP">
+                                <div class="caption">
+                                    <div class="proName">DƯỠNG MÔI THE FACE SHOP</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">499.000</span> 399.000VNĐ
+                                        <span class="proPriceDiscount">(Sale 20%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/dmlaneige.png" title="DƯỠNG MÔI LANEIGE">
+                                <div class="caption">
+                                    <div class="proName">DƯỠNG MÔI LANEIGE</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">390.000</span> 273.000VNĐ
+                                        <span class="proPriceDiscount">(Sale 30%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/skmbl.png" title="SON KEM LÌ MAYBELLINE">
+                                <div class="caption">
+                                    <div class="proName">SON KEM LÌ MAYBELLINE</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice"></span> 298.000VNĐ
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/kcnbeplain.jpg" title="KCN BEPLAIN">
+                                <div class="caption">
+                                    <div class="proName">KCN BEPLAIN</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">445.000</span> 356.000VNĐ
+                                        <span class="proPriceDiscount">(Sale 20%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/kcngood.png" title="KCN GOODAL">
+                                <div class="caption">
+                                    <div class="proName">KCN GOODAL</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice"></span> 494.000VNĐ
+
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/klbanila.jpg" title="KEM LÓT BANILA CO">
+                                <div class="caption">
+                                    <div class="proName">KEM LÓT BANILA CO</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">523.000</span> 479.000VNĐ
+                                        <span class="proPriceDiscount">(Sale 8%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/klclub.jpg" title="KEM LÓT CLUB CLIO">
+                                <div class="caption">
+                                    <div class="proName">KEM LÓT CLUB CLIO</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice"></span> 560.700VNĐ
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/knmbl.png" title="KEM NỀN MAYBELLINE">
+                                <div class="caption">
+                                    <div class="proName">KEM NỀN MAYBELLINE</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice"></span> 328.700VNĐ
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/knmbl1.png" title="KEM NỀN SUPERSTAY MAYBELLINE">
+                                <div class="caption">
+                                    <div class="proName">KEM NỀN SUPERSTAY MAYBELLINE</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice"></span> 298.700VNĐ
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/knclub.png" title="KEM NỀN CLUB CLIO">
+                                <div class="caption">
+                                    <div class="proName">KEM NỀN CLUB CLIO</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">918.000 </span> 450.800VNĐ
+                                        <span class="proPriceDiscount">(Sale 50%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/mcsmbl.png" title="MASCARA MAYBELLINE">
+                                <div class="caption">
+                                    <div class="proName">MASCARA MAYBELLINE</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice"></span> 215.000VNĐ
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/mcslmn.png" title="MASCARA LEMONADE">
+                                <div class="caption">
+                                    <div class="proName">MASCARA LEMONADE</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice"></span> 175.700VNĐ
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+            </div>
+
+
+            <!-- sản phẩm sale -->
+            <div id="menu2" class="tab-pane fade">
+                <section class="section-sale-product">
+                    <div class="container">
+                        <h3 class="text-center">Sản phẩm khuyến mại</h3> <br>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/elnclub.png" title="EYELINE CLUB CLIO">
+                                <div class="caption">
+                                    <div class="proName">EYELINE CLUB CLIO</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">420.000</span> 299.999VNĐ
+                                        <span class="proPriceDiscount">(Sale 28%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="isale"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/pplemonade.png" title="PHẤN PHỦ LEMONADE">
+                                <div class="caption">
+                                    <div class="proName">PHẤN PHỦ LEMONADE</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">350.000</span> 280.000VNĐ
+                                        <span class="proPriceDiscount">(Sale 20%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="isale"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/tbcdrjart.png" title="TẨY TBC DR.JART+">
+                                <div class="caption">
+                                    <div class="proName">TẨY TBC DR.JART+</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">890.000</span> 755.250VNĐ
+                                        <span class="proPriceDiscount">(Sale 15%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="isale"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/banilatoner.png" title="TONER PAD BANILACO">
+                                <div class="caption">
+                                    <div class="proName">TONER PAD BANILACO</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">520.000</span> 410.000VNĐ
+                                        <span class="proPriceDiscount">(Sale 21%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="isale"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/laneige.png" title="CUSHION LANEIGE">
+                                <div class="caption">
+                                    <div class="proName">CUSHION LANEIGE</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">645.000</span> 548.250VNĐ
+                                        <span class="proPriceDiscount">(Sale 15%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="isale"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/csespoir.jpg" title="CUSHION ESPOIR">
+                                <div class="caption">
+                                    <div class="proName">CUSHION ESPOIR</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">536.000</span> 475.250VNĐ
+                                        <span class="proPriceDiscount">(Sale 11%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="isale"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/csofl.png" title="CUSHION OFÉLIA">
+                                <div class="caption">
+                                    <div class="proName">CUSHION OFÉLIA</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">462.000</span> 366.250VNĐ
+                                        <span class="proPriceDiscount">(Sale 24%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="isale"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/pmclubclio.png" title="BẢNG PHẤM MẮT CLUB CLIO">
+                                <div class="caption">
+                                    <div class="proName">BẢNG PHẤM MẮT CLUB CLIO</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">730.000</span> 657.000VNĐ
+                                        <span class="proPriceDiscount">(Sale 10%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="isale"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/pmpd.png" title="BẢNG PHẤM MẮT PERFECT DIARY">
+                                <div class="caption">
+                                    <div class="proName">BẢNG PHẤM MẮT PERFECT DIARY</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">483.000</span> 299.000VNĐ
+                                        <span class="proPriceDiscount">(Sale 38%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="isale"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/srmlps.png" title="SỮA RỬA MẶT LA ROCHE-POSAY">
+                                <div class="caption">
+                                    <div class="proName">SỮA RỬA MẶT LA ROCHE-POSAY</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">630.000</span> 549.000VNĐ
+                                        <span class="proPriceDiscount">(Sale 13%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="isale"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/dmtfs.png" title="DƯỠNG MÔI THE FACE SHOP">
+                                <div class="caption">
+                                    <div class="proName">DƯỠNG MÔI THE FACE SHOP</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">499.000</span> 399.000VNĐ
+                                        <span class="proPriceDiscount">(Sale 20%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="isale"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/dmlaneige.png" title="DƯỠNG MÔI LANEIGE">
+                                <div class="caption">
+                                    <div class="proName">DƯỠNG MÔI LANEIGE</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">390.000</span> 273.000VNĐ
+                                        <span class="proPriceDiscount">(Sale 30%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="isale"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/kcnbeplain.jpg" title="KCN BEPLAIN">
+                                <div class="caption">
+                                    <div class="proName">KCN BEPLAIN</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">445.000</span> 356.000VNĐ
+                                        <span class="proPriceDiscount">(Sale 20%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="isale"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/klbanila.jpg" title="KEM LÓT BANILA CO">
+                                <div class="caption">
+                                    <div class="proName">KEM LÓT BANILA CO</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">523.000</span> 479.000VNĐ
+                                        <span class="proPriceDiscount">(Sale 8%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="isale"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="thumbnail">
+                                <img src="img/knclub.png" title="KEM NỀN CLUB CLIO">
+                                <div class="caption">
+                                    <div class="proName">KEM NỀN CLUB CLIO</div>
+                                    <div class="prodPrice">
+                                        <span class="proOfPrice">918.000 </span> 450.800VNĐ
+                                        <span class="proPriceDiscount">(Sale 50%)</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    <span class="isale"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+            </div>
+
+            <!-- các thương hiệu -->
+            <div id="menu3" class="tab-pane fade">
+                <section class="section-brand" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+                    <div class="container">
+                        <h3 class="text-center">Thương hiệu</h3> <br>
+                        <div class="row">
+                            <nav class="col-sm-3" id="myScrollspy">
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li>
+                                        <a href="#">
+                                            <input type="submit" class="btn btn-default" value="COCOON">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <input type="submit" class="btn btn-default" value="LA ROCHE-POSAY">
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <input type="submit" class="btn btn-default" value="CLUB CLIO">
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <input type="submit" class="btn btn-default" value="BANILACO">
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <input type="submit" class="btn btn-default" value="MAYBELLINE">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <input type="submit" class="btn btn-default" value="OFÉLIA">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="col-sm-6 block-main-slider2">
+                                <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel-example-generic2" data-slide-to="0" class="active">
+                                        </li>
+                                        <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+                                        <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
+                                        <li data-target="#carousel-example-generic2" data-slide-to="3"></li>
+
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" role="listbox">
+                                        <div id="section1" class="item active">
+
+                                            <img src="img/cocoonbrand.png" alt="Baner 0"
+                                                style="width: 445px; height: 370px;">
+
+                                        </div>
+                                        <div id="section2" class="item">
+
+                                            <img src="img/lpsbrand.png" alt="Baner 1" style="width: 445px; height: 370px;">
+
+                                        </div>
+                                        <div id="section3" class="item">
+                                            <img src="img/ccbrand.png" alt="Baner 2" style="width: 445px; height: 370px;">
+
+                                        </div>
+                                        <div id="section4" class="item">
+                                            <img src="img/banilabrand.png" alt="Baner 3"
+                                                style="width: 445px; height: 370px;">
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Controls -->
+                                    <a class="left carousel-control" href="#carousel-example-generic2" role="button"
+                                        data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#carousel-example-generic2" role="button"
+                                        data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <nav class="col-sm-3" id="myScrollspy">
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li>
+                                        <a href="#">
+                                            <input type="submit" class="btn btn-default" value="LEMONADE">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <input type="submit" class="btn btn-default" value="BEPLAIN">
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <input type="submit" class="btn btn-default" value="ESPOIR">
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <input type="submit" class="btn btn-default" value="LANEIGE">
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <input type="submit" class="btn btn-default" value="GOODAL">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <input type="submit" class="btn btn-default" value="SIMPLE">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="section-list-brand">
+        <div class="container">
+            <h3 class="like text-center"> Các thương hiệu hợp tác </h3>
+            <ul id="flexiselBrand">
+                <div class="col-sm-4 col-md-2 col-lg-2">
+                    <li><a href="#"><img src="img/blaroche.png" alt=""></a></li>
+                </div>
+                <div class="col-sm-4 col-md-2 col-lg-2">
+                    <li><a href="#"><img src="img/bsimple.png" alt=""></a></li>
+                </div>
+                <div class="col-sm-4 col-md-2 col-lg-2">
+                    <li><a href="#"><img src="img/blemon.png" alt=""></a></li>
+                </div>
+                <div class="col-sm-4 col-md-2 col-lg-2">
+                    <li><a href="#"><img src="img/bclub.png" alt=""></a></li>
+                </div>
+                <div class="col-sm-4 col-md-2 col-lg-2">
+                    <li><a href="#"><img src="img/bmaybelline.png" alt=""></a></li>
+                </div>
+                <div class="col-sm-4 col-md-2 col-lg-2">
+                    <li><a href="#"><img src="img/bcocoon.png" alt=""></a></li>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section class="section-footer">
+        <div id="divsubcribe" class="news-letter">
+            <div class="container">
+                <div class="join">
+                    <h6>TƯ VẤN QUA EMAIL</h6>
+                    <div class="sub-left-right">
+                        <form action="">
+                            <input type="text" value="Nhập email tại đây" onfocus="this.value='';"
+                                onblur="if(this.value=='') {this.value='Nhập email tại đây';}">
+                            <input type="submit" value="YÊU CẦU">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="divFooter" class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 col-lg-3 block-footer">
+                    <h3>TIN TỨC & SỰ KIỆN</h3>
+                    <div class="footer-detail">
+                        <h4>Black Friday</h4>
+                        <hr>
+                        <img src="img/bfd.jpg" alt="img-responsive">
+                        <p>
+                            🔥BLACK FRIDAY RỰC CHÁY TẠI BEAUTY SHOP SALE KHÔNG PHANH ĐẾN 70%!🔥
+                        <p>🎉 Sự kiện được mong chờ nhất năm đã chính thức khởi động tại Beauty Shop!</p>
+                        <a href="#" class="pull-right"> Read More</a>
+                        </p>
+                        <div class="post-meta">
+                            <a><i class="fa-solid fa-clock"></i></a> April 7, 2025
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 block-footer">
+                    <h3>CHÍNH SÁCH MUA HÀNG</h3>
+                    <div class="footer-detail">
+                        <ul class="list-feature">
+                            <li><i class="fa-solid fa-check"></i><a href="#"> Chính sách bảo mật thông tin</a></li>
+                            <li><i class="fa-solid fa-check"></i><a href="#"> Chính sách điều khoản sử dụng</a></li>
+                            <li><i class="fa-solid fa-check"></i><a href="#"> Chính sách đảm bảo chất lượng</a></li>
+                            <li><i class="fa-solid fa-check"></i><a href="#"> Chính sách đổi trả</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 block-footer">
+                    <h3>THEO DÕI SHOP</h3>
+                    <div class="footer-detail">
+                        <a href="#" class="facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 block-footer">
+                    <h3>LIÊN HỆ SHOP</h3>
+                    <div class="footer-detail">
+                        <table>
+                            <tr>
+                                <td>Địa chỉ </td>
+                                <td> : </td>
+                                <td> 96A Đ.Trần Phú, P.Mộ Lao, Hà Đông, Hà Nội</td>
+                            </tr>
+                            <tr>
+                                <td>SĐT </td>
+                                <td> : </td>
+                                <td> +(123)-456-789</td>
+                            </tr>
+                            <tr>
+                                <td>Fax </td>
+                                <td> : </td>
+                                <td> +(84) 29 309 035</td>
+                            </tr>
+                            <tr>
+                                <td>Web </td>
+                                <td> : </td>
+                                <td> BeautyShop.com</td>
+                            </tr>
+                            <tr>
+                                <td>Email </td>
+                                <td> : </td>
+                                <td> beautyshop@gmail.com</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer-bottom">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <hr>
+                    <p>BeautyShop &middot;
+                        <a href="#">Contact</a> &middot;
+                    </p>
+                    <p class="pull-right"><a href="#">Back to Top</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
